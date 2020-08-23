@@ -34,7 +34,7 @@ Now you can use the static functions of the imported *Youtube* class, like this:
 // Some Youtube video url
 const url = 'https://www.youtube.com/watch?v=C0DPdy98e4c';
 
-// Use it
+// Use module
 const valid = Youtube.validateUrl(url);
 const id = Youtube.getVideoId(url);
 const thumbnail = Youtube.getVideoThumbnailUrl(url);
