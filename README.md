@@ -8,18 +8,18 @@ This is just a simple, tiny javascript module. You can use it in Node.js or in t
 - Fetch the video title, for a given Youtube video url, by fetching the title from web.
 - Get the video thumbnail url, for a given Youtube video url, by parsing the url.
 
-## Module aspects
+### Module
 - The module is written as an ECMA2015 module, using export and import.
 - The module use promises and async/await.
 - The module make use of the *node-fetch* npm package (see https://www.npmjs.com/package/node-fetch).
 
-## Motivation
+### Motivation
 My intention, to write this module, was simply the fact, that nearly every npm package (for this job) failed for me.
 - Either it failed, because of using the actual Google Youtube Api v3, so you have to handle with API key etc.
 - Or it failed, because it was massively outdated and a lot of security vulnerabilities popped up.
 - Or it failed, because of a million dependencies, no one needs.
 
-## How to use
+### Usage
 Just copy the youtube.js file into your project and do some
 
 ```javascript
