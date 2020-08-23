@@ -13,6 +13,8 @@ I used the module in some Node.js api, for a private project. Some key points of
 - The module is written as an ES6 module, using export and import.
 - The module makes use of *promises* and *async/await*.
 - The module makes use of the *node-fetch* npm package (see https://www.npmjs.com/package/node-fetch).
+- The module makes use of JSDoc documentation, for better Editor/IDE support.
+- The module was developed with VS Code.
 
 ### Motivation
 My intention to write such a module, was the simple fact, that every npm package (for such a job) just failed for me.
