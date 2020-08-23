@@ -18,7 +18,7 @@ I used the module for some Node.js REST api, in a private project. Some key poin
 
 ### Motivation
 My intention to write such a module, was the simple fact, that every npm package (for such a job) just failed for me.
-- Either it failed, because of using the actual Google Youtube Api v3, so you have to handle with API key etc.
+- Either it failed, cause of using the actual Google Youtube Api v3, so you have to handle with API key etc.
 - Or it failed, because it was massively outdated and a lot of security vulnerabilities popped up.
 - Or it failed, because of a million dependencies, no one needs.
 
