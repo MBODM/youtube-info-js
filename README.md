@@ -1,13 +1,13 @@
 # youtube-info-js
 A simple js module, to parse some infos from a given Youtube video url.
 
+## Overview
 This is a simple, tiny, javascript module. You can use it in Node.js or in the browser, to:
 - Validate some url, to make sure it is a valid Youtube video url.
 - Extract the video id, from a given Youtube video url, by parsing the url.
 - Fetch the video title, for a given Youtube video url, by fetching the title from web.
 - Get the video thumbnail url, for a given Youtube video url, by parsing the url.
 
-## Overview:
 The module
 - is written as an ECMA2015 module, using export and import
 - is using promises with async/await
