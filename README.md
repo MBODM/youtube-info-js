@@ -9,6 +9,7 @@ This is just a simple, tiny javascript module. You can use it in Node.js or in t
 - Fetch the video title, for a given Youtube video url (by fetching the title from web).
 
 ### Module
+I used the module in some Node.js api, for a private project. Some key points of the module are:
 - The module is written as an ES6 module, using export and import.
 - The module makes use of *promises* and *async/await*.
 - The module makes use of the *node-fetch* npm package (see https://www.npmjs.com/package/node-fetch).
