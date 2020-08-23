@@ -14,7 +14,7 @@ This is just a simple, tiny javascript module. You can use it in Node.js or in t
 - The module makes use of the *node-fetch* npm package (see https://www.npmjs.com/package/node-fetch).
 
 ### Motivation
-My intention, to write this module, was simply the fact, that nearly every npm package (for this job) failed for me.
+My intention to write such a module, was the simple fact, that every npm package (for such a job) just failed for me.
 - Either it failed, because of using the actual Google Youtube Api v3, so you have to handle with API key etc.
 - Or it failed, because it was massively outdated and a lot of security vulnerabilities popped up.
 - Or it failed, because of a million dependencies, no one needs.
