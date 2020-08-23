@@ -14,7 +14,7 @@ I used the module for some Node.js REST api, in a private project. Some key poin
 - The module makes use of *promises* and *async/await*.
 - The module makes use of the [node-fetch](https://www.npmjs.com/package/node-fetch) npm package.
 - The module makes use of [JSDoc](https://jsdoc.app) documentation, for better Editor/IDE support.
-- The module was developed with VS Code.
+- The module was developed with [VS Code](https://code.visualstudio.com).
 
 ### Motivation
 My intention to write such a module, was the simple fact, that every npm package (for such a job) just failed for me.
