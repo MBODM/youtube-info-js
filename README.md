@@ -2,7 +2,7 @@
 A simple js module, to parse some infos from a given Youtube video url.
 
 ### Overview
-This is just a simple, tiny javascript module. You can use it in Node.js or in the browser, to do the following:
+This is just a simple, tiny javascript module. You can use it in Node.js or in the Browser, to do the following:
 - Validate some url, to make sure it is a valid Youtube video url (by parsing the url).
 - Extract the video id, from a given Youtube video url (by parsing the url).
 - Get the video thumbnail url, for a given Youtube video url (by parsing the url).
