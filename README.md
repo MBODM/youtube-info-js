@@ -10,8 +10,8 @@ This is just a simple, tiny javascript module. You can use it in Node.js or in t
 
 ### Module
 - The module is written as an ES6 module, using export and import.
-- The module use promises and async/await.
-- The module make use of the *node-fetch* npm package (see https://www.npmjs.com/package/node-fetch).
+- The module makes use of *promises* and *async/await*.
+- The module makes use of the *node-fetch* npm package (see https://www.npmjs.com/package/node-fetch).
 
 ### Motivation
 My intention, to write this module, was simply the fact, that nearly every npm package (for this job) failed for me.
