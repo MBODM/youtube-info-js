@@ -23,7 +23,7 @@ My intention to write such a module, based on the simple fact, that every existi
 - Or it failed, because the npm package had a million dependencies and functionalities, no one needs.
 
 ### Usage
-Just copy the youtube.js file into your project and do some
+Just copy the *youtube.js* file into your project and do some
 
 ```javascript
 import Youtube from './youtube.js';
