@@ -23,21 +23,24 @@ My intention to write such a module, based on the simple fact, that every existi
 - Or it failed, because the npm package had a million dependencies and functionalities, no one needs.
 
 ### Usage
-Just copy the *youtube.js* file into your project and do some
+Just copy the *youtube.js* file into your project and do some import, like this:
 
 ```javascript
 import Youtube from './youtube.js';
 ```
-Now you can use the static functions of the imported *Youtube* class:
+Now you can use the static functions of the imported *Youtube* class, like this:
 
 ```javascript
+// Some Youtube video url
 const url = 'https://www.youtube.com/watch?v=C0DPdy98e4c';
 
+// Use it
 const valid = Youtube.validateUrl(url);
 const id = Youtube.getVideoId(url);
 const thumbnail = Youtube.getVideoThumbnailUrl(url);
 const title = await Youtube.getVideoTitle(url);
 
+// Show results
 console.log(valid);
 console.log(id);
 console.log(thumbnail);
