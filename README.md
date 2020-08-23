@@ -12,7 +12,7 @@ This is just a simple, tiny javascript module. You can use it in Node.js or in t
 I used the module for some Node.js REST api, in a private project. Some key points of the module are:
 - The module is written as an ES6 module, using *export* and *import*.
 - The module makes use of *promises* and *async/await*.
-- The module makes use of the *node-fetch* npm package (see https://www.npmjs.com/package/node-fetch).
+- The module makes use of the *node-fetch* [GitHub](http://github.com) npm package (see https://www.npmjs.com/package/node-fetch).
 - The module makes use of JSDoc documentation, for better Editor/IDE support.
 - The module was developed with VS Code.
 
