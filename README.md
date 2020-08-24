@@ -17,10 +17,10 @@ I used the module for some Node.js REST api, in a private project. Some key poin
 - The module was developed with [VS Code](https://code.visualstudio.com).
 
 ### Motivation
-My intention to write such a module, based on the simple fact, that every existing npm package (for such a job) just failed for me.
-- Either it failed, cause of using actual Google Youtube API v3, so you have to handle with API key and other things.
-- Or it failed, because the npm package was massively outdated and a lot of security vulnerabilities popped up.
-- Or it failed, because the npm package had a million dependencies and functionalities, no one needs.
+My intention to write such a module, was the simple fact, that all existing Youtube npm packages just failed for me.
+- Either it failed, cause of using actual Google Youtube API v3, so you have to handle with API key and such stuff.
+- Or it failed, because the package was massively outdated and a lot of security vulnerabilities popped up.
+- Or it failed, because the package had a million dependencies and functionalities, no one needs.
 
 ### Usage
 Just copy the youtube.js file into your project and do some *import*, like this:
