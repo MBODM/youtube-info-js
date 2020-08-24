@@ -23,7 +23,7 @@ My intention to write such a module, was the simple fact, that all existing Yout
 - Or failed, because the package had a million dependencies and functionalities, no one ever needs/use.
 
 ### Usage
-Just copy the youtube.js file into your project and do some *import*, like this:
+Just copy the "youtube.js" file (from this repo) into your project and do some *import*, like this:
 
 ```javascript
 import Youtube from './youtube.js';
