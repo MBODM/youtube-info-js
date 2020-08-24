@@ -18,9 +18,9 @@ I used the module for some Node.js REST api, in a private project. Some key poin
 
 ### Motivation
 My intention to write such a module, was the simple fact, that all existing Youtube npm packages just failed for me.
-- Either failed, cause of using actual Google Youtube API v3, so you have to handle with API key and such stuff.
+- Either failed, cause of using Google Youtube API v3, so you have to handle with API key and such stuff.
 - Or failed, because the package was massively outdated and a lot of security vulnerabilities popped up.
-- Or failed, because the package had a million dependencies and functionalities, no one needs.
+- Or failed, because the package had a million dependencies and functionalities, no one ever needs/use.
 
 ### Usage
 Just copy the youtube.js file into your project and do some *import*, like this:
