@@ -26,7 +26,7 @@ My intention to write such a module, was the simple fact, that all existing Yout
 Just copy the "youtube.js" file (from this repo) into your project and do some *import*, like this:
 
 ```javascript
-import Youtube from './youtube.js';
+import * as youtube from './youtube.js';
 ```
 Now you can use the static functions of the imported *Youtube* class, like this:
 
@@ -35,10 +35,10 @@ Now you can use the static functions of the imported *Youtube* class, like this:
 const url = 'https://www.youtube.com/watch?v=C0DPdy98e4c';
 
 // Use module
-const valid = Youtube.validateUrl(url);
-const id = Youtube.getVideoId(url);
-const thumbnail = Youtube.getVideoThumbnailUrl(url);
-const title = await Youtube.getVideoTitle(url);
+const valid = youtube.validateUrl(url);
+const id = youtube.getVideoId(url);
+const thumbnail = youtube.getVideoThumbnailUrl(url);
+const title = await youtube.getVideoTitle(url);
 
 // Show results
 console.log(valid);
