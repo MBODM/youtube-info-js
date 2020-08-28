@@ -1,4 +1,4 @@
-# youtube-js
+# youtube.js
 A simple js module, to parse some data from a given Youtube video url.
 
 ### Overview
