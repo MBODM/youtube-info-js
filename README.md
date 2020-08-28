@@ -1,5 +1,5 @@
 # youtube.js
-A simple js module, to parse some data from a given Youtube video url.
+A simple JS module, to parse some data from a given Youtube video url.
 
 ### Overview
 This is just a simple, tiny javascript module. You can use it in Node.js or in the Browser, to do the following:
