@@ -28,7 +28,7 @@ Just copy the "youtube.js" file (from this repo) into your project and do some *
 ```javascript
 import * as youtube from './youtube.js';
 ```
-Now you can use the static functions of the imported *Youtube* class, like this:
+Now you can use the exported functions of the imported *youtube* module, like this:
 
 ```javascript
 // Some Youtube video url
