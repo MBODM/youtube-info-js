@@ -40,7 +40,7 @@ export function validateUrl(url) {
  * - Returns undefined, if given url is not a valid Youtube video url.
  */
 export function getVideoId(url) {
-    if (this.validateUrl(url)) {
+    if (validateUrl(url)) {
         // No need for extra query validation here, cause url is fully validated.
         return new URL(url).searchParams.get('v');
     }
@@ -56,7 +56,7 @@ export function getVideoId(url) {
  * - Returns undefined, if given url is not a valid Youtube video url.
  */
 export async function getVideoTitle(url) {
-    if (this.validateUrl(url)) {
+    if (validateUrl(url)) {
         try {
             const response = await fetch('http://noembed.com/embed?url=' + url.trim());
             const json = await response.json();
@@ -76,7 +76,7 @@ export async function getVideoTitle(url) {
  */
 export function getVideoThumbnailUrl(url) {
     // No need for extra url validation here, cause id is falsy, if url is invalid.
-    const id = this.getVideoId(url);
+    const id = getVideoId(url);
     if (id) {
         return `https://img.youtube.com/vi/${id}/default.jpg`;
     }
