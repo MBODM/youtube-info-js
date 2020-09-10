@@ -27,8 +27,30 @@ export function validateUrl(url) {
             }
         }
         return false;
-    } catch {
+    }
+    catch {
         return false;
+    }
+}
+
+/**
+ * Parse given Youtube video url, to get an object containing video url, video id, video title and video thumbnail url.
+ * @async
+ * @param {string} url
+ * @returns {Promise<object>} Promise (containing object or undefined)
+ * - Returns object, containing said Youtube video data.
+ * - Returns undefined, if fetching video title went wrong.
+ * - Returns undefined, if given url is not a valid Youtube video url.
+ */
+export async function parseUrl(url) {
+    if (validateUrl(url)) {
+        url = url.trim();
+        const title = await getVideoTitleInternal(url);
+        if (title) {
+            const id = getVideoIdInternal(url);
+            const thumbnail = getVideoThumbnailInternal(url);
+            return { url, id, title, thumbnail };
+        }
     }
 }
 
@@ -41,8 +63,7 @@ export function validateUrl(url) {
  */
 export function getVideoId(url) {
     if (validateUrl(url)) {
-        // No need for extra query validation here, cause url is fully validated.
-        return new URL(url).searchParams.get('v');
+        return getVideoIdInternal(url);
     }
 }
 
@@ -57,13 +78,7 @@ export function getVideoId(url) {
  */
 export async function getVideoTitle(url) {
     if (validateUrl(url)) {
-        try {
-            const response = await fetch('http://noembed.com/embed?url=' + url.trim());
-            const json = await response.json();
-            return json.title;
-        } catch {
-            // Do nothing, to return undefined.
-        }
+        return await getVideoTitleInternal(url);
     }
 }
 
@@ -75,9 +90,33 @@ export async function getVideoTitle(url) {
  * - Returns undefined, if given url is not a valid Youtube video url.
  */
 export function getVideoThumbnailUrl(url) {
-    // No need for extra url validation here, cause id is falsy, if url is invalid.
-    const id = getVideoId(url);
-    if (id) {
-        return `https://img.youtube.com/vi/${id}/default.jpg`;
+    if (validateUrl(url)) {
+        return getVideoThumbnailInternal(url);
     }
+}
+
+// The internal functions just do the job, without any validation.
+// So every public function validates their Youtube url just once.
+
+function getVideoIdInternal(url) {
+    // We expect a validated url here.
+    return new URL(url).searchParams.get('v');
+}
+
+async function getVideoTitleInternal(url) {
+    // We expect a validated url here.
+    try {
+        const response = await fetch('http://noembed.com/embed?url=' + url.trim());
+        const json = await response.json();
+        return json.title;
+    }
+    catch {
+        // Do nothing, to return undefined.
+    }
+}
+
+function getVideoThumbnailInternal(url) {
+    // We expect a validated url here.
+    const id = getVideoIdInternal(url);
+    return `https://img.youtube.com/vi/${id}/default.jpg`;
 }
