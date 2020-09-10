@@ -48,7 +48,7 @@ export async function parseUrl(url) {
         const title = await getVideoTitleInternal(url);
         if (title) {
             const id = getVideoIdInternal(url);
-            const thumbnail = getVideoThumbnailInternal(url);
+            const thumbnail = getVideoThumbnailUrlInternal(url);
             return { url, id, title, thumbnail };
         }
     }
@@ -91,7 +91,7 @@ export async function getVideoTitle(url) {
  */
 export function getVideoThumbnailUrl(url) {
     if (validateUrl(url)) {
-        return getVideoThumbnailInternal(url);
+        return getVideoThumbnailUrlInternal(url);
     }
 }
 
@@ -115,7 +115,7 @@ async function getVideoTitleInternal(url) {
     }
 }
 
-function getVideoThumbnailInternal(url) {
+function getVideoThumbnailUrlInternal(url) {
     // We expect a validated url here.
     const id = getVideoIdInternal(url);
     return `https://img.youtube.com/vi/${id}/default.jpg`;
